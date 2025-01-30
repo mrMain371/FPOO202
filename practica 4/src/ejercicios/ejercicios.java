@@ -40,5 +40,24 @@ public static void ejercicio1(){
             System.out.println("El precio de la entrada es $190.");
         }
     }
+    public static void ejercicio4(){
 
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce tu frase : ");
+        String frase = scanner.nextLine().trim().toLowerCase().replace(" ", "");
+        boolean palindromo = true;
+        int j = frase.length()-1;
+        for (int i = 0; i<frase.length();i++ , j--){
+            char a = frase.charAt(i);
+            char b = frase.charAt(j);
+            if (a!=b) {
+                System.out.println("no es palindromo");
+                palindromo = false;
+                break;
+            }
+        }
+        if (palindromo)
+            System.out.println("es palindromo");
+
+    }
 }
