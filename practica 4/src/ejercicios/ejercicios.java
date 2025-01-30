@@ -16,5 +16,15 @@ public static void ejercicio1(){
     }
 
 }
-    public static void ejercicio2(){}
+    public static void ejercicio2(){
+      int num;
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce tu numero  : ");
+      if ((scanner.nextInt()%2)==0) {
+          System.out.println(" es par");
+      }
+      else{
+          System.out.println("es impar");
+      }
+    }
 }
