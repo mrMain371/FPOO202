@@ -9,7 +9,7 @@ public static void ejercicio1(){
     Scanner scanner = new Scanner(System.in);
     System.out.print("Introduce tu contrasena  : ");
     String pass = scanner.nextLine().trim();
-    if (str.toLowerCase()== pass.toLowerCase()){
+    if (str.toLowerCase().equals(pass.toLowerCase()) ){
         System.out.println("acceso concedido");
     }
     else{
@@ -64,11 +64,11 @@ public static void ejercicio1(){
     public static void ejercicio5(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Introduce tu num : ");
-        int num1 = scanner.nextInt();
+        int num1 =Integer.parseInt(scanner.nextLine()) ;
         System.out.print("Introduce tu num 2: ");
-        int num2 = scanner.nextInt();
+        int num2=Integer.parseInt(scanner.nextLine()) ;
         System.out.println("que operacion deseas, ingresa el simbolo");
-        String  a =  scanner.nextLine();
+        String  a =  scanner.nextLine().trim();
         char c = a.charAt(0);
         switch (c){
             case '+':
