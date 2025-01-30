@@ -1,5 +1,6 @@
 package ejercicios;
 
+import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class ejercicios {
@@ -59,5 +60,32 @@ public static void ejercicio1(){
         if (palindromo)
             System.out.println("es palindromo");
 
+    }
+    public static void ejercicio5(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Introduce tu num : ");
+        int num1 = scanner.nextInt();
+        System.out.print("Introduce tu num 2: ");
+        int num2 = scanner.nextInt();
+        System.out.println("que operacion deseas, ingresa el simbolo");
+        String  a =  scanner.nextLine();
+        char c = a.charAt(0);
+        switch (c){
+            case '+':
+                System.out.println(num1+num2);
+                break;
+            case '*':
+                System.out.println(num1*num2);
+                break;
+            case '/':
+                System.out.println(num1/num2);
+                break;
+            case '-':
+                System.out.println(num1-num2);
+                break;
+            default:
+                System.out.println("desconozco este operador ");
+                break;
+        }
     }
 }
