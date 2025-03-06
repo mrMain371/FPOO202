@@ -28,7 +28,7 @@ public class Spartan  extends Soldado {
 
 
     }
-    public  void recargarEscudo(int recarga) {
+    public  void recargarEscudo() {
     escudo= 100;
         System.out.println(nombre + "ha recargado su escudo al maximo ");
     }
